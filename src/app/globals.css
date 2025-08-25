@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-signin-green: #6aaf23;
+  --color-signup-bg: #e9f9f2;
+  --color-signup-text: #673f1c;
+  --color-primaryText: #111827;
+  --color-mint-cream: #effaf5;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom scrollbar hiding */
+.hide-scrollbar {
+  /* For webkit browsers (Chrome, Safari, Edge) */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Alternative method for better cross-browser support */
+.scrollbar-hidden {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background: transparent;
+}
